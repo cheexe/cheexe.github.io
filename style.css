@@ -1,9 +1,13 @@
 body {
-  background-color: powderblue;
+  background-color: black;
 }
 h1 {
-  color: blue;
+  color: gray;
+  font-family: verdana;
+  font-size: 300%;
 }
-p {
-  color: red;
+p  {
+  color: white;
+  font-family: courier;
+  font-size: 160%;
 }
