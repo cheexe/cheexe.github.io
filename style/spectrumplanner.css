@@ -1,0 +1,1949 @@
+@import url("../includes/fonts/open_sans/stylesheet.css");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+   
+body {
+	background-color: rgb(231, 231, 231);
+	font-family: "open_sans";
+	overflow-x: hidden;
+	font-size: 16px;
+}
+
+a {
+	cursor:pointer!important;
+}
+
+
+span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+input[type=submit] {
+	cursor:pointer!important;
+}
+
+
+noscript {
+	color: red;
+	margin-left: 3%;
+}
+
+.green {
+	color: #749D54;
+}
+
+textarea {
+	resize: none;
+}
+
+
+
+p.error {
+	color: #c00;
+	text-align: center;
+	margin-top: 2px;
+}
+
+p.uitleg {
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.pagetitle {
+	color: #2A98B3;
+	text-align: center;
+}
+
+.pagetitle-nocenter {
+	color: #2A98B3;
+}
+
+.ondertitel {
+	color: #2A98B3;
+}
+
+/* SP-logo definition */
+.sp-logo h1 {
+	display: inline;
+	font-family: 'open_sans';
+	color: #2A98B3;
+}
+
+.sp-logo-s {
+	font-weight: lighter;
+}
+
+.sp-logo-p {
+	font-weight: bold;
+}
+
+
+
+#wrapper {
+	background-color: #fff;
+	min-width: 1200px;
+	max-width: 100%;
+}
+
+#content {
+	margin-bottom: 30px;
+}  
+
+/* Header */
+#header .sp-logo h1 {
+	font-size: 60px;
+}
+
+#header .sp-logo {
+	margin-left: 15px;
+}
+
+#header {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2A98B3;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu ul ul  ul{
+	display: none;
+}
+
+#menu ul ul li:hover > ul {
+	display: block;
+}
+
+#menu ul li:hover > a {
+    background-color: #749D54;
+}
+
+#menu li:hover ul {
+	display: block;
+	position: absolute;
+}
+
+#menu li:hover li {
+	float: none;
+}
+
+#menu .dropdown li:hover a {
+	background: rgb(100,100,100) !important;
+}
+
+
+
+#content {
+	background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+	height: auto;
+}
+
+#infoboxwrapper {
+	width: 1100px;
+	margin: 0px auto;
+	padding-top: 50px;
+}
+
+#infoblock1 {
+	position: relative;
+	left: 750px;
+	height: 250px;
+	width: 300px;
+	background-color: rgba(116, 157, 84, 0.7);
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+	display: table;
+}
+
+#infoblock2 {
+	position: relative;
+	left: 400px;
+	top: 50px;
+	height: 250px;
+	width: 300px;
+	background-color: rgba(42, 152, 179, 0.7);
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+	display: table;
+}
+
+#infoblock3 {
+	position: relative;
+	left: 50px;
+	top: 100px;
+	height: 250px;
+	width: 300px;
+	background-color: rgba(116, 157, 84, 0.7);
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+	display: table;
+}
+
+
+#loginBox {
+	background-color: #2A98B3;
+	display: none;
+	text-align: center;
+	z-index: 10;
+	width: 100%;
+	height: 40px;
+	vertical-align: middle;
+}
+
+#loginBox form {
+	padding-top: 5px;
+}
+
+#loginBox input {
+	background-color: #fff;
+	height: 30px;
+	width: 280px;
+	font-family: "open_sans";
+	border: 0;
+	text-align: center;
+}
+
+/* Footer */
+#footer {
+	clear: both;
+	text-align: center;
+	background-color: #2A98B3;
+	color: #fff;
+	padding: 5px 0px;
+}
+
+#footer a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+/* Content */
+#content-container {
+	width: 800px;
+	margin: 25px auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* Success Box */
+#successbox, #verzondenbox {
+	display: none;
+	position: fixed;
+	top: 92px;
+	left: 50%;
+	margin-left: -160px;
+	width: 320px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.7);	
+    border-radius: 10px;
+	z-index: 100002;
+}
+
+.successboxtext {
+	text-align: center;
+	margin-top: 8px;
+	color: white;
+}
+
+/* Overlay add overhoren */
+#overlayagendaitemoverhorenform {
+	display: none;
+	width: 650px;
+	overflow: auto;
+	margin: 20px auto;
+}
+
+.overlayagendaitemoverhorenformtitle {
+	color: #749D54;
+}
+
+.overlayagendaitemoverhorenformundertitle {
+	color: grey;
+	margin-left: 10px;
+}
+
+#overlayagendaitemoverhorenforminformation {
+	margin-top: 10px;
+	color: grey;
+	text-align: center;
+}
+
+#overlayagendaitemoverhorenform input[type=text] {
+	margin: 0 auto;
+	display: block;
+	width: 585px;
+	height: 30px;
+	border: 1px solid #749D54;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.overlayagendaitemoverhorenformbool {
+	text-align: center;
+}
+
+#overlayagendaitemoverhorenform textarea {
+	display: block;
+	margin: 0 auto;
+	width: 585px;
+	height: 60px;
+	border: 1px solid #749D54;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#overlayagendaitemoverhorenform input[type=button] {
+	display: block;
+	margin: 0 auto;
+	background-color: #749D54;
+	color: #fff;
+	width: 587px;
+	height: 30px;
+	border: 1px solid #749D54;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.overlayagendaitemoverhorenforminformationstof {
+	width: 585px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Overlay Overhoren Table */
+#overlayoverhorentable {
+	display: none;
+	width: 650px;
+	margin: 20px auto;
+}
+
+.overlayoverhorentabletitle {
+	color: #749D54;
+}
+
+.overlayoverhorentableundertitle {
+	color: grey;
+	margin-left: 10px;
+}
+
+#overlayoverhorentableid {
+	width: 650px;
+	margin: 10px auto;
+	border-spacing: 0px;
+}
+
+#overlayoverhorentableid th {
+	background-color: #749D54;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+}
+
+#overlayoverhorentableid td {
+	height: 40px;
+	border: 1px solid #749D54;
+	border-left: 0;
+	border-top: 0;
+}
+
+#overlayoverhorentableid tr td:first-child {
+	border-left: 1px solid #749D54;
+}
+
+#overlayoverhorentableid td.overlayoverhorentabledag {
+	width: 180px;
+	text-align: center;
+}
+
+#overlayoverhorentableid td.overlayoverhorentablestof {
+	text-align: center;
+}
+
+.overlayoverhorentablestoftext {
+	margin: 5px;
+}
+
+td.overlayoverhorentableblokje {
+	width: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td.overlayoverhorentableblokje a {
+    color: #000 !important;
+	text-decoration: none !important;
+}
+
+/* Overlay Overhoorlijst */
+#overlayoverhoorlijst {
+	display: none;
+	width: 650px;
+	margin: 20px auto;
+}
+
+#overlayoverhoorlijsttableid {
+	width: 650px;
+	margin: 10px auto;
+	border-spacing: 0px;
+}
+
+#overlayoverhoorlijsttableid th {
+	background-color: #749D54;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	height: auto;
+	padding: 5px;
+}
+
+#overlayoverhoorlijsttableid td {
+	height: auto;
+	border: 1px solid #749D54;
+	border-left: 0;
+	border-top: 0;
+	padding: 5px;
+}
+
+#overlayoverhoorlijsttableid tr td:first-child {
+	border-left: 1px solid #749D54;
+}
+
+#overlayoverhoorlijsttableid tr.overlayoverhoorlijsttabletype {
+	width: 180px;
+	text-align: center;
+}
+
+#overlayoverhoorlijsttableid tr.overlayoverhoorlijsttablestof {
+	text-align: center;
+}
+
+td.overlayoverhoorlijsttableblokje {
+	width: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td.overlayoverhoorlijsttableblokje a {
+    color: #000 !important;
+	text-decoration: none !important;
+}
+
+
+
+
+
+/* Overhoorlijst */
+#overlayoverhoorlijst {
+	display: none;
+	width: calc(100% - 200px);
+	margin: 20px 100px;
+}
+
+#overlayoverhoorlijsttableid {
+	width: calc(100% - 100px);
+	margin: 10px 50px;
+	border-spacing: 0px;
+}
+
+.overlayoverhorentabletitle {
+	color: #749D54;
+}
+
+.overlayoverhorentableundertitle {
+	color: grey;
+	margin-left: 10px;
+}
+
+#overlayoverhoorlijsttableid th {
+	background-color: #749D54;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	height: auto;
+}
+
+#overlayoverhoorlijsttableid td {
+	height: auto;
+	border: 1px solid #749D54;
+	border-left: 0;
+	border-top: 0;
+}
+
+#overlayoverhoorlijsttableid tr td:first-child {
+	border-left: 1px solid #749D54;
+}
+
+#overlayoverhoorlijsttableid tr.overlayoverhoorlijsttabletype {
+	width: 180px;
+	text-align: center;
+}
+
+#overlayoverhoorlijsttableid tr.overlayoverhoorlijsttablestof {
+	text-align: center;
+}
+
+td.overlayoverhoorlijsttableblokje {
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td.overlayoverhoorlijsttableblokje a, 
+td.overlayoverhoorlijsttableleerling a {
+    color: #000 !important;
+	text-decoration: none !important;
+}
+
+/* Overlay Naar Huis */
+#overlaynaarhuis {
+	display: none;
+	width: 650px;
+	margin: 20px auto;
+}
+
+.overlaynaarhuistitle {
+	color: #749D54;
+}
+
+.overlaynaarhuisundertitle {
+	color: grey;
+	margin-left: 10px;
+}
+#overlaynaarhuis input[type=text] {
+	margin: 0 auto;
+	display: block;
+	width: 585px;
+	height: 30px;
+	border: 1px solid #749D54;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+#overlaynaarhuis input[type=button] {
+	display: block;
+	margin: 0 auto;
+	background-color: #749D54;
+	color: #fff;
+	width: 587px;
+	height: 30px;
+	border: 1px solid #749D54;
+	text-align: center;
+	margin-bottom: 5px;
+	cursor:pointer;
+}
+
+#overlaynaarhuis input[type=submit] {
+	display: block;
+	margin: 0 auto;
+	background-color: #749D54;
+	color: #fff;
+	width: 587px;
+	height: 30px;
+	border: 1px solid #749D54;
+	text-align: center;
+	margin-bottom: 5px;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+#agendabox {
+	margin-top: 5px;
+}
+
+#agendaomschrijving {
+	padding-left: 20px;
+	height: 55px;
+	background-color: #749D54;
+}
+
+.agendatitle {
+	color: #fff;
+	float: left;
+	line-height: 55px;
+    height: 55px;
+	vertical-align: middle;
+}
+
+#agendatoolbar {
+	width: 900px;
+	float: right;
+}
+
+#agendatoolbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #749D54;
+	border: 2px solid #749D54;
+    border-bottom-left-radius: 15px;
+}
+
+#agendatoolbar li {
+    float: right;
+}
+
+#agendatoolbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#agendatable {
+	clear: both;
+	overflow-x: scroll;
+}
+
+#agendatable table {
+	width: 2030px;
+	margin: 0 auto;
+	border-spacing: 0px;
+	background-color: rgba(116,157,84,0.4);
+}
+
+#agendatable th {
+	color: #749D54;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#agendatable td {
+	height: 40px;
+	border: 1px solid #749D54;
+	border-left: 0;
+	border-bottom: 0;
+}
+
+#agendatable td.pijltje {
+	width: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#agendatable td.afspraak {
+	width: 250px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #fff;
+}
+
+#agendatable td.afspraak a {
+	display: block;
+    max-width: 100%;
+	height: 40px;
+	color: #000 !important;
+	text-decoration: none !important;
+	font-size: 13px;
+	margin-left: 5px;
+	overflow: auto;
+}
+
+#agendatable td:last-child {
+	border-right: 0;
+}
+
+/* Planner Gedeelte */
+
+#plannerbox {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#planneromschrijving {
+	height: 55px;
+	padding-left: 20px;
+	background-color: #2A98B3;
+}
+
+.plannertitle {
+	color: #fff;
+	float: left;
+    line-height: 55px;
+    height: 55px;
+	vertical-align: middle;
+}
+
+#plannertoolbar {
+	width: 900px;
+	float: right;
+}
+
+#plannertoolbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2A98B3;
+	border: 2px solid #2A98B3;
+    border-bottom-left-radius: 15px;
+}
+
+#plannertoolbar li {
+    float: right;
+}
+
+#plannertoolbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#plannertable {
+	clear: both;
+	overflow-x: scroll;
+}
+
+#plannertable table {
+	width: 2030px;
+	margin: 0px auto;
+	border-spacing: 0px;
+	background-color: rgba(42, 152, 179,0.4);
+}
+
+#plannertable th {
+	color: #2A98B3;
+	text-align: center;
+	vertical-align: middle;
+	height: 50px;
+}
+
+#plannertable td {
+	height: 40px;
+	border: 1px solid #2A98B3;
+	border-left: 0;
+	border-bottom: 0;
+}
+
+#plannertable td.blokje {
+	width: 40px;
+	max-width: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#plannertable td.planitem {
+	width: 170px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #fff !important;
+}
+
+#plannertable td.planitem a {
+	display: block;
+    max-width: 100%;
+	height: 40px;
+	color: #000 !important;
+	text-decoration: none !important;
+	font-size: 13px;
+	margin-left: 5px;
+	overflow: auto;
+}
+
+#plannertable td:last-child {
+	border-right: 0;
+}
+
+.planitemtext {
+	font-size: 13px;
+	margin: 2px;
+}
+
+/* Overlay Styling */
+
+#overlay {
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 10000;
+	text-align:center;
+}
+
+#inneroverlay {
+	background-color: rgba(255, 255, 255, 1);
+	width: auto;
+	max-width: 90%;
+	min-height: 100px;
+	max-height: 90%;
+	position: relative;
+	top: 50px;
+	margin:auto;
+	overflow: auto;
+}
+
+/* Agenda Overlay Form */
+
+#overlayagendaitemform {
+	display: none;
+	width: 650px;
+	margin: 20px auto;
+}
+
+.overlayagendaitemformtitle {
+	color: #749D54;
+}
+
+.overlayagendaitemformundertitle {
+	color: grey;
+	margin-left: 10px;
+}
+
+#overlayagendaitemform form {
+	width: 400px;
+	margin: 20px auto;
+}
+
+#overlayagendaitemform input[type=text] {
+	width: 400px;
+	height: 30px;
+	border: 1px solid #749D54;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#overlayagendaitemform input[type=button] {
+	background-color: #749D54;
+	color: #fff;
+	width: 402px;
+	height: 30px;
+	border: 1px solid #749D54;
+	text-align: center;
+	margin-bottom: 5px;
+	cursor:pointer;
+}
+
+#overlayagendaitemform input[type=submit] {
+	background-color: #749D54;
+	color: #fff;
+	width: 402px;
+	height: 30px;
+	border: 1px solid #749D54;
+	text-align: center;
+	margin-bottom: 5px;
+	cursor:pointer;
+}
+
+#overlayagendaitemform select {
+	width: 402px;
+	height: 30px;
+	border: 1px solid #749D54;
+	margin-bottom: 5px;
+}
+
+#overlayagendaitemform textarea {
+	width: 400px;
+	height: 80px;
+	border: 1px solid #749D54;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+/* Overlay Planned Table */
+#overlayplannedtable {
+	display: none;
+	width: 650px;
+	margin: 20px auto;
+}
+
+.overlayplannedtabletitle {
+	color: #2A98B3;
+}
+
+.overlayplannedtableundertitle {
+	color: grey;
+	margin-left: 10px;
+}
+
+#overlayplannedtableid {
+	display: none;
+}
+
+#overlayplannedtableid {
+	width: 650px;
+	margin: 10px auto;
+	border-spacing: 0px;
+}
+
+#overlayplannedtableid th {
+	background-color: #2A98B3;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+}
+
+#overlayplannedtableid td {
+	height: 40px;
+	border: 1px solid #2A98B3;
+	border-left: 0;
+	border-top: 0;
+}
+
+#overlayplannedtableid tr td:first-child {
+	border-left: 1px solid #2A98B3;
+}
+
+#overlayplannedtableid td.overlayplannedtabledag {
+	width: 180px;
+	text-align: left;
+	padding:5px;
+}
+
+#overlayplannedtableid td.overlayplannedtablestof {
+	text-align: left;
+}
+
+.overlayplannedtablestoftext {
+	margin: 5px;
+}
+
+#overlayplannedtableid td.overlayplannedtableblokje {
+	width: 40px;
+	text-align: center;
+	vertical-align: middle;
+	color: #000 !important;
+	text-decoration: none !important;
+}
+
+
+
+
+#werkbladen #content {
+	margin: 60px auto;
+	width: 900px;
+}
+
+
+#werkbladen #werkbladentableid {
+	width: 100%;
+	border-spacing: 0px;
+	margin-top: 10px;
+}
+
+#werkbladen #werkbladentableid th {
+	background-color: #2A98B3;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+}
+
+#werkbladen #werkbladentableid td {
+	height: 40px;
+	border: 1px solid #2A98B3;
+	border-left: 0;
+	border-top: 0;
+	text-align: center;
+	color: #000 !important;
+	text-decoration: none !important;
+}
+
+#werkbladen #werkbladentableid tr td:first-child {
+	border-left: 1px solid #2A98B3;
+}
+
+#werkbladen #werkbladentableid a {
+	color: #000 !important;
+	text-decoration: none !important;
+}
+
+#werkbladen .werkbladlink a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 14px 16px;
+	background-color: #749D54;
+	margin-top: 5px;
+}
+
+#werkbladen .formulier {
+	margin: 10px 0px;
+}
+
+#werkbladen .links {
+	float: left;
+	width: 440px;
+}
+
+#werkbladen .rechts {
+	float: right;
+	width: 440px;
+}
+
+#werkbladen .formulier textarea {
+	border: none;
+	background-color: rgba(116, 157, 84, 0.5);
+	color: #000000;
+	margin-top: 2px;
+	padding: 5px;
+}
+
+#werkbladen textarea::-webkit-input-placeholder {
+    color:    #000000;
+}
+#werkbladen textarea:-moz-placeholder {
+    color:    #000000;
+}
+#werkbladen textarea::-moz-placeholder {
+    color:    #000000;
+}
+#werkbladen textarea:-ms-input-placeholder {
+    color:    #000000;
+}
+
+#werkbladen .formulier input[type=submit] {
+	width: 900px;
+	height: 30px;
+	background: #749D54;
+	color: #fff;
+	text-align: center;
+	border: none;
+}
+
+#werkbladen .formulier input[type=text] {
+	border: 0;
+	font-size: 16px;
+}
+
+#werkbladen input[type=text].dotted {
+	border-bottom: 1px dotted;
+}
+
+#werkbladen .formulier input[type=radio], .formulier input[type=checkbox] {
+	margin-left: 10px;
+}
+
+#werkbladen .formulier select {
+	width: 357px;
+	height: 30px;
+	border: 1px solid #749D54;
+	margin-top: 2px;
+}
+
+#werkbladen .formulier table {
+	border-spacing: 0px;
+	width: 900px;
+	margin: 10px 0px;
+}
+
+#werkbladen .formulier table td {
+	border: 1px solid #749D54;
+	border-top: none;
+	border-left: none;
+}
+
+#werkbladen .formulier table.toets1table td {
+	width: 128px !important;
+}
+
+#werkbladen .formulier table td:last-child {
+	border-right: none;
+}
+
+#werkbladen .formulier table tr:last-child td {
+	border-bottom: none;
+}
+
+#werkbladen .dagnamen {
+	text-align: center;
+}
+
+#werkbladen .datacellen {
+	height: 315px;
+}
+
+#werkbladen .datacellen textarea {
+	width: 118px;
+	height: 100%;
+	margin: 0px !important;
+	margin-top: 5px !important;
+	background-color: #fff !important;
+	color: #000 !important;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#werkbladen .toets2leerstof td {
+	vertical-align: top;
+}
+
+#werkbladen .toets2leerstof td textarea {
+	width: 118px;
+	height: 100%;
+	margin: 0px !important;
+	background-color: #fff !important;
+	color: #000 !important;
+}
+
+#werkbladen .toets2leerstof textarea::-webkit-input-placeholder {
+    color: #000 !important;
+}
+#werkbladen .toets2leerstof textarea:-moz-placeholder {
+    color: #000 !important;
+}
+#werkbladen .toets2leerstof textarea::-moz-placeholder {
+    color: #000 !important;
+}
+#werkbladen .toets2leerstof textarea:-ms-input-placeholder {
+    color: #000 !important;
+}
+
+#werkbladen tr.tableheadtoets2 td {
+	text-align: center;
+}
+
+#werkbladen .toets2vak, 
+#werkbladen .toets2nkeer {
+	width: 200px;
+}
+
+#werkbladen .toets2table input {
+	height: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#werkbladen .toets2table textarea {
+	margin-top: 5px !important;
+	background-color: #fff !important;
+	color: #000 !important;
+}
+
+#werkbladen .toets2table ::-webkit-input-placeholder {
+    color: #000 !important;
+}
+#werkbladen .toets2table :-moz-placeholder {
+    color: #000 !important;
+}
+#werkbladen .toets2table ::-moz-placeholder {
+    color: #000 !important;
+}
+#werkbladen .toets2table :-ms-input-placeholder {
+    color: #000 !important;
+}
+
+#werkbladen .dagplanblokje {
+	background-color: rgba(116, 157, 84, 0.5);
+}
+
+#werkbladen .dagplanblokje input {
+	background-color: rgba(116, 157, 84, 0);
+	color: #000000;
+	text-align: center;
+}
+
+#werkbladen .dagplanblokje label {
+	color: #749D54;
+}
+
+#werkbladen .dagplanblokje textarea {
+	background-color: rgba(116, 157, 84, 0);
+	width: 430px;
+	padding-bottom: 0px !important;
+	margin-bottom: -5px !important;
+}
+
+#werkbladen .dagplanblokje select {
+	width: 440px;
+	background-color: rgba(116, 157, 84, 0);
+	border: rgba(116, 157, 84, 0);
+	color: #000000;
+}
+
+
+#werkbladen .boekeninpaklijsttable {
+	color: #749D54;
+}
+
+#werkbladen tr.boekeninpaklijsttablehead td {
+	text-align: center;
+	font-weight: bold;
+}
+
+#werkbladen .boekeninpaklijstdag {
+	width: 115px;
+	text-align: center;
+	font-weight: 600;
+}
+
+#werkbladen .boekeninpaklijstvink {
+	width: 40px;
+	text-align: center;
+}
+
+#werkbladen .boekeninpaklijstvink input[type=checkbox] {
+	margin-left: 0 !important;
+}
+
+#werkbladen .boekeninpaklijsttable textarea {
+	margin-top: 5px !important;
+	background-color: #fff !important;
+	color: #000000 !important;
+}
+
+#werkbladen .boekeninpaklijsttabledagtd {
+	height: 100px;
+}
+
+
+
+#werkbladen .uitleg {
+	width:900px;
+	text-align: left;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#werkbladen p.uitleg {
+	text-align: left;
+}
+
+
+
+
+#groepentableid {
+	width: 100%;
+	border-spacing: 0px;
+	margin-top: 10px;
+}
+
+#groepentableid th {
+	background-color: #2A98B3;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+}
+
+#groepentableid td {
+	height: 40px;
+	border: 1px solid #2A98B3;
+	border-left: 0;
+	border-top: 0;
+	text-align: center;
+	color: #000 !important;
+	text-decoration: none !important;
+}
+
+#groepentableid tr td:first-child {
+	border-left: 1px solid #2A98B3;
+}
+
+#groepentableid a {
+	color: #000 !important;
+	text-decoration: none !important;
+}
+
+p.error {
+	color: #c00;
+	text-align: center;
+	margin-top: 2px;
+}
+
+p.uitleg {
+	text-align: center;
+}
+
+p.undertitle {
+	color: grey;
+	margin-left: 10px;
+}
+
+
+.overlayplannedtableaddstudymoment {
+	margin-top: 10px;
+	width: 650px;
+	text-align: center;
+}
+
+.overlayplannedtableaddstudymoment a {
+	display: block;
+	color: #fff;
+	background-color: #2A98B3;
+	padding: 9px;
+	cursor:pointer;
+}
+
+/* overlay planner add studymoment */
+#overlayplanneraddstudymoment {
+	display: none;
+	width: 650px;
+	overflow: auto;
+	margin: 20px auto;
+}
+
+.overlayplanneraddstudymomenttitle {
+	color: #2A98B3;
+}
+
+.overlayplanneraddstudymomentundertitle {
+	color: grey;
+	margin-left: 10px;
+}
+
+#overlayplanneraddstudymomentinformation {
+	margin-top: 10px;
+	color: grey;
+	text-align: center;
+}
+
+#overlayplanneraddstudymoment select {
+	margin: 0 auto;
+	display: block;
+	width: 587px;
+	height: 30px;
+	border: 1px solid #2A98B3;
+	margin-bottom: 5px;
+}
+
+#overlayplanneraddstudymoment input[type=text] {
+	margin: 0 auto;
+	display: block;
+	width: 585px;
+	height: 30px;
+	border: 1px solid #2A98B3;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.overlayplanneraddstudymomentaangepastestofbool {
+	text-align: center;
+}
+
+#overlayplanneraddstudymoment textarea {
+	display: block;
+	margin: 0 auto;
+	width: 585px;
+	height: 60px;
+	border: 1px solid #2A98B3;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#overlayplanneraddstudymoment input[type=button] {
+	display: block;
+	margin: 0 auto;
+	background-color: #2A98B3;
+	color: #fff;
+	width: 587px;
+	height: 30px;
+	border: 1px solid #2A98B3;
+	text-align: center;
+	margin-bottom: 5px;
+	cursor:pointer;
+}
+
+#overlayplanneraddstudymoment input[type=submit] {
+	display: block;
+	margin: 0 auto;
+	background-color: #2A98B3;
+	color: #fff;
+	width: 587px;
+	height: 30px;
+	border: 1px solid #2A98B3;
+	text-align: center;
+	margin-bottom: 5px;
+	cursor:pointer;
+}
+
+.overlayplanneraddstudymomentinformationstof {
+	width: 585px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#overlayplanneraddstudymomentweekselect {
+	width: 587px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: #2A98B3;
+}
+
+#overlayplanneraddstudymomentweekselect ul {
+    width: 464px;
+	height: 30px;
+	list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+#overlayplanneraddstudymomentweekselect li {
+	display: inline;
+	list-style-type: none;
+	float:left;
+	background-color: #2A98B3;
+}
+
+#overlayplanneraddstudymomentweekselect li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 16px;
+    text-decoration: none;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #2A98B3;
+	border-bottom: 1px solid #2A98B3;
+}
+
+#overlayplanneraddstudymomentweekselect li:last-child a {
+	border-right: 1px solid #fff;
+}
+
+.overlayplannerchangestudymomentagendaitem {
+	display: block;
+	margin: 0 auto;
+	background-color: #749D54;
+	color: #fff;
+	width: 587px;
+	padding: 3px 16px;
+	border: 1px solid #749D54;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+/* Planner Change Form */
+#plannerchangeform {
+	border: 2px solid #2A98B3;
+	border-radius: 15px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 200px;
+	width: 300px;
+	background: #fff;
+	margin-left: -150px;
+	margin-top: -100px;
+	display: none;
+	z-index: 10000;
+}
+
+#plannerchangeforminner {
+	margin-left: 15px;
+	margin-top: 5px;
+	width: 270px;
+	height: 190px;
+}
+
+#plannerchangetijdform, #plannerchangevolgordeform {
+	display: none;
+}
+
+.plannerchangeformtitle {
+	color: #2A98B3;
+}
+
+.plannerchangeformundertitle {
+	color: grey;
+}
+
+#plannerchangeform input[type=text] {
+	border: 1px solid #2A98B3;
+	width: 270px;
+	height: 30px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#plannerchangeform input[type=button] {
+	border: 1px solid #2A98B3;
+	background-color: #2A98B3;
+	color: #fff;
+	width: 272px;
+	height: 30px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#plannerchangevolgordeformvolgorde {
+	margin-top: 15px;
+}
+
+/* Success Box */
+#successbox {
+	display: none;
+	position: fixed;
+	top: 92px;
+	left: 50%;
+	margin-left: -160px;
+	width: 320px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.7);	
+    border-radius: 10px;
+	z-index: 100002;
+}
+
+.successboxtext {
+	text-align: center;
+	margin-top: 8px;
+	color: white;
+}
+
+
+#usertableid {
+	width: 100%;
+	border-spacing: 0px;
+	margin-top: 10px;
+}
+
+#usertableid th {
+	background-color: #2A98B3;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+}
+
+#usertableid td {
+	height: 40px;
+	border: 1px solid #2A98B3;
+	border-left: 0;
+	border-top: 0;
+	text-align: center;
+	color: #000 !important;
+	text-decoration: none !important;
+}
+
+#usertableid tr td:first-child {
+	border-left: 1px solid #2A98B3;
+}
+
+#usertableid a {
+	color: #000 !important;
+	text-decoration: none !important;
+}
+
+#inner input[type=text], #inner input[type=password] {
+	width: 358px;
+	height: 30px;
+	border: 1px solid #2A98B3;
+	margin: 2px 0px;
+	text-align: center;
+}
+
+#inner input[type=submit] {
+	width: 360px;
+	height: 30px;
+	background: #2A98B3;
+	color: #fff;
+	margin: 2px 0px;
+	text-align: center;
+	border: none;
+}
+
+#inner select {
+	width: 360px;
+	height: 30px;
+	border: 1px solid #2A98B3;
+	margin-top: 2px;
+}
+
+#inner select.multiple {
+	margin:auto;
+	width: 360px;
+	height: auto;
+	min-height:100px;
+	border: 1px solid #2A98B3;
+	margin-top: 2px;
+	padding:4px;
+}
+
+#inner label, #inner input {
+  display:inline-block;
+  vertical-align:top;
+}
+
+#inner label {
+	width: 250px;
+}
+
+#inner {
+	width: 650px;
+	margin: 20px auto;
+}
+
+
+
+
+
+#left {
+	float: left;
+	margin: 2% 1% 2% 2%;
+	width: 27%;
+}
+
+#right {
+	float: right;
+	margin: 2% 2% 2% 1%;
+	width: 67%;
+}
+
+.inner {
+	margin: 10px;
+}
+
+#account-settings-menu {
+	margin-top: 20px;
+}
+
+#account-settings-menu ul {
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 400px;
+	width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+
+#account-settings-menu li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+#account-settings-menu li a.active {
+    background-color: #749D54;
+    color: white;
+}
+
+#account-settings-menu li a:hover:not(.active) {
+    background-color: #2A98B3;
+    color: white;
+}
+
+.inner input[type=text],.inner input[type=password] {
+	width: 358px;
+	height: 30px;
+	border: 1px solid #2A98B3;
+	margin: 2px 0px;
+	text-align: center;
+}
+
+.inner input[type=submit] {
+	width: 360px;
+	height: 30px;
+	background: #2A98B3;
+	color: #fff;
+	margin: 2px 0px;
+	text-align: center;
+	border: none;
+}
+
+.inner label, .inner input {
+  display:inline-block;
+}
+
+#settings-block-1 label {
+	width: 250px;
+}
+
+#settings-block-2 label {
+	width: 250px;
+}
+
+#settings-block-1 {
+	width: 650px;
+	margin: 20px auto;
+}
+
+#settings-block-2 {
+	width: 650px;
+	margin: 20px auto;
+}
+
+
+
+#registration-form {
+	text-align: center;
+	width: 450px;
+	margin: 20px auto;
+}
+
+#registration-form input[type=text], #registration-form input[type=password] {
+	width: 358px;
+	height: 30px;
+	border: 1px solid #2A98B3;
+	margin: 2px 0px;
+	text-align: center;
+}
+
+#registration-form input[type=submit] {
+	width: 360px;
+	height: 30px;
+	background: #2A98B3;
+	color: #fff;
+	margin: 2px 0px;
+	text-align: center;
+	border: none;
+}
+
+p.registration-form {
+	color: #125;
+	text-align: center;
+}
+
+p.error {
+	color: #c00;
+	text-align: center;
+	margin-top: 2px;
+}
+
+.g-recaptcha {
+	width: 302px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+h1.pagetitle-nocenter {
+	margin-left: 15px;
+	color: #2A98B3;
+	font-weight: normal;
+}
+
+.uitleg {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* SP-logo definition */
+.sp-logo h1 {
+	display: inline;
+	font-family: 'open_sans';
+	color: #2A98B3;
+}
+
+.sp-logo-s {
+	font-weight: lighter;
+}
+
+.sp-logo-p {
+	font-weight: bold;
+}
+
+/* Header */
+#header .sp-logo h1 {
+	font-size: 37px;
+}
+
+#header .sp-logo {
+	margin-left: 15px;
+}
+
+/* Footer */
+#footer {
+	clear: both;
+	text-align: center;
+	background-color: #2A98B3;
+	color: #fff;
+	padding: 5px 0px;
+}
+
+#footer a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+/* Content container */
+
+#content-container {
+	width: 940px;
+	margin: 10px auto;
+}
+
+
+
+
+#contactformdiv {
+	text-align: center;
+	width: 560px;
+	margin: 20px auto;
+}
+
+#contactformdiv input[type=text] {
+	width: 558px;
+	height: 30px;
+	border: 1px solid #2A98B3;
+	margin: 2px 0px;
+	text-align: center;
+}
+
+#contactformdiv input[type=submit] {
+	width: 560px;
+	height: 30px;
+	background: #2A98B3;
+	color: #fff;
+
+	text-align: center;
+	border: none;
+}
+
+#contactformdiv textarea {
+	width: 548px;
+	height: 150px;
+	border: 1px solid #2A98B3;
+	margin-top: 2px;
+	padding: 5px;
+}
+
+.successcenter {
+	margin: 0 auto;
+	text-align: center;
+	border: 10px solid #39FF14;
+    border-radius: 10px;
+	background-color: #39FF14;
+	width: 600px;
+}
+
+.errorcenter {
+	margin: 0 auto;
+	text-align: center;
+	border: 10px solid #ff0101;
+    border-radius: 10px;
+	background-color: #ff0101;
+	width: 600px;
+}
+
+
+
+h1.pagetitle-nocenter {
+	margin-left: 15px;
+	color: #2A98B3;
+	font-weight: normal;
+}
+
+.uitleg {
+	width: 380px;
+	margin: 0 auto;
+}
+
+/* SP-logo definition */
+.sp-logo h1 {
+	display: inline;
+	font-family: 'open_sans';
+	color: #2A98B3;
+}
+
+.sp-logo-s {
+	font-weight: lighter;
+}
+
+.sp-logo-p {
+	font-weight: bold;
+}
+
+/* Header */
+#header .sp-logo h1 {
+	font-size: 37px;
+}
+
+#header .sp-logo {
+	margin-left: 15px;
+}
+
+/* Footer */
+#footer {
+	clear: both;
+	text-align: center;
+	background-color: #2A98B3;
+	color: #fff;
+	padding: 5px 0px;
+}
+
+#footer a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+/* Content */
+#content-container {
+	margin-top: 5px;
+}
+
+.stap {
+	margin: 5px 15px;
+}
+
+.stapnaam {
+	clear: both;
+	border-bottom: 1px solid #2A98B3;
+}
+
+.stapnaam h1 {
+	display: inline;
+	font-family: 'open_sans';
+	color: #2A98B3;
+}
+
+.stapnummer {
+	font-weight: normal;
+}
+
+.stapnaam-naam {
+	font-weight: normal;
+	float: right;
+}
+
+
+
+a.niet-overhoord {font-weight:bold; color:#cccccc; text-decoration:none;}
+a.overhoord {font-weight:bold; color:#749D54;  text-decoration:none;}
+
+
+#leerlingEmail {padding:2px; margin-left:10px; margin-right:10px;}
+button {padding:2px 5px 2px 5px;}
