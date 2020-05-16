@@ -38,8 +38,6 @@ function loadagenda() {
 		},
 		cache: false,
 		async: false,
-		error: function() {
-			alert("Er is iets misgegaan bij het laden van je agenda, probeer het later opnieuw of neem contact met ons op!");
 		},
 		success: function(result) {
 			loadagendahuiswerkarray = result;
