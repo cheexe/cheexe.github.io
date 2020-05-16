@@ -6,7 +6,7 @@
    ##							info@dynata.nl							  ##
    ##							© Dynata 2015							  ##
    ######################################################################### */
-$urlroot = window.location.protocol + "//" + window.location.host;
+$urlroot = window.location.protocol + "//" + cheexe.github.io;
 
 /* Agenda Functions */
 function loadagenda() {
